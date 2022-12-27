@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MdFahimFaezAbir_30028" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="OsK-V1-1iu">
+                                <rect key="frame" x="0.0" y="107" width="414" height="789"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="9MZ-uM-NLt">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="itemCell" id="4qW-gO-WBJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="G8X-VO-S0H">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="598-gJ-2qy">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="107"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XMT-Ms-3oj">
+                                        <rect key="frame" x="15" y="45" width="109" height="47"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Gallery">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="23" name="Charter-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="LSS-zd-PCZ">
+                                        <rect key="frame" x="324" y="56" width="70" height="31"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7yb-0D-DjN">
+                                                <rect key="frame" x="0.0" y="0.0" width="27" height="31"/>
+                                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="square.grid.2x2.fill" catalog="system">
+                                                    <backgroundConfiguration key="background"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="changeView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZmS-BT-e6d"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h9y-5L-Lga">
+                                                <rect key="frame" x="43" y="0.0" width="27" height="31"/>
+                                                <color key="tintColor" red="0.1172861427" green="0.1172861427" blue="0.1172861427" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="plus" catalog="system">
+                                                    <backgroundConfiguration key="background"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="selectImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hkH-ah-Pga"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="70" id="cBb-gx-kax"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.18588698927442079" green="0.45864898989898994" blue="0.45849803256402744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="XMT-Ms-3oj" secondAttribute="bottom" constant="15" id="34a-L9-o7G"/>
+                                    <constraint firstItem="XMT-Ms-3oj" firstAttribute="top" secondItem="598-gJ-2qy" secondAttribute="top" constant="45" id="Qgm-1Q-qt5"/>
+                                    <constraint firstItem="LSS-zd-PCZ" firstAttribute="leading" secondItem="XMT-Ms-3oj" secondAttribute="trailing" constant="200" id="Rk3-rO-O1J"/>
+                                    <constraint firstItem="XMT-Ms-3oj" firstAttribute="leading" secondItem="598-gJ-2qy" secondAttribute="leading" constant="15" id="Y01-R2-Kxu"/>
+                                    <constraint firstAttribute="trailing" secondItem="LSS-zd-PCZ" secondAttribute="trailing" constant="20" id="hZw-AY-4in"/>
+                                    <constraint firstAttribute="bottom" secondItem="LSS-zd-PCZ" secondAttribute="bottom" constant="20" id="mW7-FX-QFZ"/>
+                                    <constraint firstItem="LSS-zd-PCZ" firstAttribute="top" secondItem="598-gJ-2qy" secondAttribute="top" constant="56" id="yAG-ck-p88"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.2044350207" green="0.48556125160000002" blue="0.57569068670000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="OsK-V1-1iu" firstAttribute="top" secondItem="598-gJ-2qy" secondAttribute="bottom" id="35w-PJ-fJq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="598-gJ-2qy" secondAttribute="trailing" id="NiE-yd-X59"/>
+                            <constraint firstItem="598-gJ-2qy" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="RSG-ve-cXd"/>
+                            <constraint firstAttribute="bottom" secondItem="OsK-V1-1iu" secondAttribute="bottom" id="ULL-57-YOe"/>
+                            <constraint firstItem="OsK-V1-1iu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="WMO-eO-nTb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OsK-V1-1iu" secondAttribute="trailing" id="i5I-sL-0R3"/>
+                            <constraint firstItem="598-gJ-2qy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ulT-32-c3t"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="OsK-V1-1iu" id="caN-jU-6v9"/>
+                        <outlet property="gridButton" destination="7yb-0D-DjN" id="F0d-UT-g51"/>
+                        <outlet property="listButton" destination="h9y-5L-Lga" id="9Yd-jZ-eOn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="114.50892857142857"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="plus" catalog="system" width="128" height="113"/>
+        <image name="square.grid.2x2.fill" catalog="system" width="128" height="114"/>
+    </resources>
+</document>
